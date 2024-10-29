@@ -1,4 +1,4 @@
-package atividadeJava02;
+package exerciciosSwitchCase;
 
 import java.util.Scanner;
 

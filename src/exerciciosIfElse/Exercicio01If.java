@@ -1,4 +1,4 @@
-package atividadeJava02;
+package exerciciosIfElse;
 
 import java.util.Scanner;
 
