@@ -2,7 +2,7 @@ package atividadeJava02;
 
 import java.util.Scanner;
 
-public class Exercicio01 {
+public class Exercicio01If {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
