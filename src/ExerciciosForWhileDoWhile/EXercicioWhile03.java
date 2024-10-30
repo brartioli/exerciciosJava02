@@ -6,13 +6,13 @@ public class EXercicioWhile03 {
 
 	public static void main(String[] args)
 	{
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		int idade;
 		int contMenor =0, contMaior=0;
 		
 		System.out.printf("Digite uma idade: ");
-		idade = sc.nextInt();
+		idade = scanner.nextInt();
 		
 		while(idade >= 0)
 		{
@@ -22,14 +22,15 @@ public class EXercicioWhile03 {
 				contMaior++;
 			}
 			System.out.printf("Digite uma idade: ");
-			idade = sc.nextInt();
+			idade = scanner.nextInt();
 			
 		}
 		System.out.println("Total de pessoas menores de 21 anos: " + contMenor);
 		System.out.println("Total de pessoas maiores de 50 anos: " + contMaior);
 		
 						
-		sc.close();
+		scanner.close();
+		
 	}
 
 }

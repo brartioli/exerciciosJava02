@@ -6,14 +6,14 @@ public class ExercicioFor01 {
 
 	public static void main(String[] args)
 	{
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		int A, B;
 		
 		System.out.printf("Digite o primeiro número do intervalo: ");
-		A = sc.nextInt();
+		A = scanner.nextInt();
 		System.out.printf("Digite o último número do intervalo: ");
-		B = sc.nextInt();
+		B = scanner.nextInt();
 		
 		if(A>B) {
 			System.out.println("Intervalo inválido!");
@@ -25,7 +25,7 @@ public class ExercicioFor01 {
 				}
 			}
 		}
-		sc.close();
+		scanner.close();
 	}
 
 }
