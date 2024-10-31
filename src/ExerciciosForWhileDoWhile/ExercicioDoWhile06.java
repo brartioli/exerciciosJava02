@@ -8,8 +8,8 @@ public class ExercicioDoWhile06 {
 	{
 		Scanner scanner = new Scanner(System.in);
 		
-		int numero;
-		int soma =0;
+		float numero;
+		float soma =0;
 		float contador=0;
 		float media=0;
 		
@@ -17,9 +17,10 @@ public class ExercicioDoWhile06 {
 			System.out.printf("Digite um número: ");
 			numero = scanner.nextInt();
 			
-			if(numero % 3 == 0) {
+			if(numero % 3 == 0 && numero != 0) {
 				soma = soma + numero;
 				contador++;
+				
 			}
 		}while(numero != 0);
 		
