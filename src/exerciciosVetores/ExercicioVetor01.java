@@ -16,12 +16,11 @@ public class ExercicioVetor01 {
 			if (vetorNumeros[i] == numero) {
 				System.out.println("O número " + numero + " está localizado na posição: " + i);
 			}
-			
+
 		}
-		if(numero > vetorNumeros.length) {
+		if (numero > vetorNumeros.length) {
 			System.out.println("O número " + numero + " não foi encontrado.");
 		}
-		
 
 		scanner.close();
 	}

@@ -30,10 +30,10 @@ public class ExercicioVetor02 {
 		}
 		System.out.println("Soma: " + soma);
 
-		media = (float)soma / vetorNumeros.length;
-		 System.out.printf("Média: %.2f", media);
+		media = (float) soma / vetorNumeros.length;
+		System.out.printf("Média: %.2f", media);
 
-		 scanner.close();
+		scanner.close();
 	}
 
 }
