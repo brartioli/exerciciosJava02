@@ -21,24 +21,33 @@ public class Ex02Pilha {
 			System.out.printf("Entre com a opção desejada: ");
 			menu = scanner.nextInt();
 			scanner.nextLine();
-			
+
 			switch (menu) {
 
 			case 1:
 				System.out.println("Digite o nome: ");
 				pilha.add(scanner.nextLine());
-				System.out.println("\nPilha: " + pilha + " Livro adicionado!");
+				for (String livro : pilha) {
+					System.out.println(livro);
+				}
+				System.out.println("Livro adicionado!");
 				break;
 
 			case 2:
-				System.out.println("\nLista de livros na pilha: " + pilha);
+				System.out.println("\nLista de livros na pilha: ");
+				for (String livro : pilha) {
+					System.out.println(livro);
+				}
 				break;
 
 			case 3:
 				if (pilha.isEmpty()) {
 					System.out.println("A pilha está vazia!");
 				} else {
-					System.out.println("\nPilha: " + pilha.pop() + pilha + " O livro foi retirado da pilha!");
+					System.out.println("Livro removido da Pilha: " + pilha.pop());
+				}
+				for (String livro : pilha) {
+					System.out.println(livro);
 				}
 				break;
 

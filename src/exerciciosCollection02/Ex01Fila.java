@@ -26,18 +26,27 @@ public class Ex01Fila {
 			case 1:
 				System.out.printf("Digite o nome: ");
 				fila.add(scanner.next());
-				System.out.println("\nFila: " + fila + " Cliente adicionado!");
+				for (String nome : fila) {
+					System.out.println(nome);
+				}
+				System.out.println("\nCliente adicionado!");
 				break;
 
 			case 2:
-				System.out.println("\nLista de clientes na fila: " + fila);
+				System.out.println("\nLista de clientes na fila: ");
+				for (String nome : fila) {
+					System.out.println(nome);
+				}
 				break;
 
 			case 3:
 				if (fila.isEmpty()) {
 					System.out.println("A fila está vazia.");
 				} else {
-					System.out.println("\nFila: " + fila.remove() + fila);
+					System.out.println("\nCliente removido: " + fila.remove());
+				}
+				for (String nome : fila) {
+					System.out.println(nome);
 				}
 				break;
 
